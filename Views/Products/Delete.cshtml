@@ -1,0 +1,16 @@
+﻿@model Product
+
+<h2>Är du säker på att du vill ta bort denna produkt?</h2>
+
+<form asp-action="DeleteConfirmed" method="post">
+    <input type="hidden" name="Id" value="@Model.Id" />
+
+    <p>
+        <strong>Namn:</strong> @Model.Name<br />
+        <strong>Pris:</strong> @Model.Price<br />
+        <strong>Beskrivning:</strong> @Model.Description<br />
+    </p>
+
+    <button type="submit">Ja, ta bort</button>
+    <a href="/Products">Nej, avbryt</a>
+</form>

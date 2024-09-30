@@ -1,0 +1,21 @@
+﻿@model Product
+
+<h2>Redigera produkt</h2>
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" name="Id" value="@Model.Id" />
+
+    <label for="Name">Namn:</label>
+    <input type="text" name="Name" value="@Model.Name" />
+    <br />
+
+    <label for="Price">Pris:</label>
+    <input type="text" name="Price" value="@Model.Price" />
+    <br />
+
+    <label for="Description">Beskrivning:</label>
+    <input type="text" name="Description" value="@Model.Description" />
+    <br />
+
+    <button type="submit">Spara</button>
+</form>

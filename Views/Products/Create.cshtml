@@ -1,0 +1,19 @@
+﻿@model Product
+
+<h2>Skapa ny produkt</h2>
+
+<form asp-action="Create" method="post">
+    <label for="Name">Namn:</label>
+    <input type="text" name="Name" />
+    <br />
+
+    <label for="Price">Pris:</label>
+    <input type="text" name="Price" />
+    <br />
+
+    <label for="Description">Beskrivning:</label>
+    <input type="text" name="Description" />
+    <br />
+
+    <button type="submit">Spara</button>
+</form>
